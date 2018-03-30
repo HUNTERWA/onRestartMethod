@@ -15,10 +15,58 @@ public class SplashScreen extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        ImageView imageView=findViewById(R.id.astute);
-        imageView.animate().scaleX(2f).scaleY(2f).setDuration(2000);
+        /*ImageView imageView=findViewById(R.id.astute);
+        imageView.animate().scaleX(2f).scaleY(2f).setDuration(2000);*/
+
+        final ImageView imageView=findViewById(R.id.astute);
+        //imageView.animate().alpha(0);
+
+        final Thread thread=new Thread()
+        {
+            public void run()
+            {
+                try
+                {
+                    sleep(500);
+                }
+                catch (InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+                finally
+                {
+                    imageView.animate().alpha(1f).setDuration(2500);
+
+                }
+            }
+        };
+        thread.start();
+
+        /*Thread t=new Thread()
+        {
+            public void run()
+            {
+                try
+                {
+                    sleep(1500);
+                }
+                catch (InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+                finally
+                {
+                    imageView.animate().alpha(1f).setDuration(1000);
+
+                }
+            }
+        };
+        t.start();*/
 
 
+
+        //imageView.animate().alpha(0.5f).setDuration(1000);
+        //imageView.animate().alpha(1f).setDuration(1000);
 
         Handler handler=new Handler();
         handler.postDelayed(new Runnable() {

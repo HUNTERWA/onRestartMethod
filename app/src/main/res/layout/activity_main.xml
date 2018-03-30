@@ -22,7 +22,7 @@
         android:id="@+id/yes"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/ripple"
         android:elevation="19dp"
         android:shadowColor="#000000"
         android:text="Yes"
