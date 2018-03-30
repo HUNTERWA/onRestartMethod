@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity
         Button yes=findViewById(R.id.yes);
         yes.animate().translationX(1000).setDuration(0);
 
-
         Button no=findViewById(R.id.no);
         no.animate().translationX(-1000).setDuration(0);
 
@@ -43,10 +42,8 @@ public class MainActivity extends AppCompatActivity
         };
         thread.start();
 
-
         /*ImageView imageView=findViewById(R.id.astute);
         imageView.animate().scaleX(1.5f).scaleY(1.5f).setDuration(3000);*/
-
 
     }
 

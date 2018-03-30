@@ -17,10 +17,6 @@ public class SplashScreen extends AppCompatActivity
 
         ImageView imageView=findViewById(R.id.astute);
         imageView.animate().scaleX(2f).scaleY(2f).setDuration(2000);
-        /*imageView.animate().scaleX(0.5f).scaleY(0.5f).setDuration(1000);
-        imageView.animate().scaleX(1.5f).scaleY(1.5f).setDuration(1000);*/
-        /*imageView.animate().scaleX(0.5f).scaleY(0.5f).setDuration(1000);
-        imageView.animate().scaleX(1.5f).scaleY(1.5f).setDuration(1000);*/
 
 
 
