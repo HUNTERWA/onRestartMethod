@@ -35,34 +35,12 @@ public class SplashScreen extends AppCompatActivity
                 }
                 finally
                 {
-                    imageView.animate().alpha(1f).setDuration(2500);
+                    imageView.animate().alpha(1f).setDuration(3000);
 
                 }
             }
         };
         thread.start();
-
-        /*Thread t=new Thread()
-        {
-            public void run()
-            {
-                try
-                {
-                    sleep(1500);
-                }
-                catch (InterruptedException e)
-                {
-                    e.printStackTrace();
-                }
-                finally
-                {
-                    imageView.animate().alpha(1f).setDuration(1000);
-
-                }
-            }
-        };
-        t.start();*/
-
 
 
         //imageView.animate().alpha(0.5f).setDuration(1000);
