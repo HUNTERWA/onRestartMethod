@@ -15,18 +15,18 @@ public class NextActivity extends AppCompatActivity
         setContentView(R.layout.activity_next);
     }
 
-    @Override
+    /*@Override
     public boolean onKeyDown(int keyCode, KeyEvent event)
     {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0)
         {
 
-            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+            Intent intent=new Intent(NextActivity.this,MainActivity.class);
             startActivity(intent);
             // do something on back.
             return true;
         }
 
         return super.onKeyDown(keyCode, event);
-    }
+    }*/
 }

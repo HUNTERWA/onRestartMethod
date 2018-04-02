@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity
                        }
                        finally
                        {
-                           Intent intent=new Intent(getApplicationContext(),NextActivity.class);
+                           Intent intent=new Intent(MainActivity.this,NextActivity.class);
                            startActivity(intent);
                        }
                    }
@@ -102,4 +102,10 @@ public class MainActivity extends AppCompatActivity
         cantSay.animate().translationX(0).setDuration(250);
     }
 
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+        animation();
+    }
 }
