@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity
             {
                 try
                 {
-                    sleep(1000);
+                    sleep(500);
                 }
                 catch (InterruptedException e)
                 {
@@ -93,19 +93,19 @@ public class MainActivity extends AppCompatActivity
     public void animation()
     {
         Button yes = findViewById(R.id.yes);
-        yes.animate().translationX(0).setDuration(250);
+        yes.animate().translationX(0).setDuration(500);
 
         Button no=findViewById(R.id.no);
-        no.animate().translationX(0).setDuration(250);
+        no.animate().translationX(0).setDuration(500);
 
         Button cantSay=findViewById(R.id.cantSay);
-        cantSay.animate().translationX(0).setDuration(250);
+        cantSay.animate().translationX(0).setDuration(500);
     }
 
     @Override
-    protected void onResume()
+    public void onRestart()
     {
-        super.onResume();
+        super.onRestart();
         animation();
     }
 }
